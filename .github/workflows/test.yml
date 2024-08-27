@@ -12,7 +12,7 @@ jobs:
           sleep 1
       - name: "Testing an Action"
         id: actiontime
-        uses: "krayon-tests/action@d3f81935f4409851949264d7fb56473c8781b14f"
+        uses: "krayon-tests/action@d2363202bcc7e407b13eeb61ae808b5c4e386ee1"
         with:
           text: "This is my test action's test text"
 
