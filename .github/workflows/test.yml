@@ -4,11 +4,14 @@ jobs:
   Test:
     runs-on: ubuntu-latest
     steps:
-      - name: "Testing an Action"
-        uses: "krayon-tests/action@4fabd3b41bf7f390758c44d73bf16ac0f090ec85"
-        with:
-          text: "This is my test action's test text"
+      - name: "My Action"
+        id: intro
         run: |
           echo "Action says: ${{ github.actor }} on ${{ runner.os }}"
           sleep 1
+      - name: "Testing an Action"
+        id: actiontime
+        uses: "krayon-tests/action@4fabd3b41bf7f390758c44d73bf16ac0f090ec85"
+        with:
+          text: "This is my test action's test text"
 
