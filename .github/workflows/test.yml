@@ -1,3 +1,4 @@
+name: "Action test"
 on: workflow_dispatch
 
 jobs:
