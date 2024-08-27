@@ -9,7 +9,8 @@ jobs:
         id: intro
         run: |
           echo "Action says: ${{ github.actor }} on ${{ runner.os }}"
-          sleep 1
+          pwd
+          ls -la
       - name: "Testing an Action"
         id: actiontime
         uses: "krayon-tests/action@78061759ebfd4aa19469e881e5331b7556f671a5"
